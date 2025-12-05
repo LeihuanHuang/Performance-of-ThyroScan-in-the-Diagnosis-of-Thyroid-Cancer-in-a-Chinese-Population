@@ -13,7 +13,7 @@ This code repository contains statistical analysis code for the paper "Diagnosti
 - Calculate AUC (Area Under the Curve) with 95% confidence intervals
 - Generate ROC curve plots
 
-### Diagnostic Performance Metrics Calculation
+### Diagnostic Performance Metrics Calculation (related to Table 1 and 2)
 - Calculate accuracy, sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV)
 - Compute 95% confidence intervals for all metrics using Wilson's method
 - Output formatted results
