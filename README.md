@@ -24,19 +24,22 @@ This code repository contains statistical analysis code for the paper "Diagnosti
 - Plot curves showing PPV and NPV changes with prevalence rates
 
 ## Requirements
-
+### R Language Environment
+- **R version**: 4.0.0 or higher
+- **Recommended IDE**: RStudio or VS Code with R extension
 ### R Package Dependencies
 - `pROC` - ROC curve analysis
 - `PropCIs` - Confidence interval calculation
 
 Install required packages:
 ```r
-install.packages(c("pROC", "PropCIs"))
+install.packages(c("pROC", "PropCIs","dplyr"))
 ```
 
 ### Data Requirements
-The code requires the following variables (which are provided and replacable):
-- `data$True_Label` - True labels (0/1)
-- `data$Prediction_Score` - Prediction scores
-- `tp`, `fp`, `fn`, `tn` - Confusion matrix elements
-- `Se`, `Sp` - Sensitivity and specificity
+
+**Provided Data File:**
+- `data.Rda` - Contains the validation dataset with prediction results from 75 FNA samples with known pathological results
+**Variables in data.Rda:**
+- `data$True_Label` - True pathological labels (0 = benign, 1 = malignant)
+- `data$Prediction_Score` - ThyroScan prediction scores (continuous values)
